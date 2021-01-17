@@ -3,6 +3,7 @@
 1. Setting up Jupyter Notebook
    * [Download Anaconda for quick Jupyter Notebook access](https://www.anaconda.com/)
    * [Install pyenv for Jupyter Notebook](https://albertauyeung.github.io/2020/08/17/pyenv-jupyter.html)
+   * [Add Kernel to Jupyter Notebook](https://qiita.com/yuki-shark/items/fba874a109f04004158b)
     
 1. Install pandas
   ```
