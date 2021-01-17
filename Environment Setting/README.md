@@ -6,7 +6,8 @@
   
   ```
   pip install pandas
-  *or
+  ```
+  ```
   conda install pandas
   ```
   
