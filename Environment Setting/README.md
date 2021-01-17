@@ -60,6 +60,7 @@
   s.loc['index_one'] | Selection by index
   df.iloc[0,:] | First row      
   ```
+  
   * Data Cleaning
   ```
   df.columns = ['a','b','c'] | Rename columns
@@ -95,5 +96,25 @@
   df.apply(np.mean) | Apply the function np.mean() across each column
   nf.apply(np.max,axis=1) |Apply the function np.max() across each row
   ```
-  * 
+  
+  * Join/Combine
+  ```
+  df1.append(df2) | Add the rows in df1 to the end of df2 (columns should be identical)
+  pd.concat([df1, df2],axis=1) | Add the columns in df1 to the end of df2 (rows should be identical)      
+  f1.join(df2,on=col1,how='inner') | SQL-style join the columns in df1 with the columns in df2 where the rows for col have identical values. 'how' can be one of 'left', 'right', 'outer', 'inner'
+  ```
+  
+  * Statistics
+  ```
+  df.describe() | Summary statistics for numerical columns
+  df.mean() | Returns the mean of all columns
+  df.corr() | Returns the correlation between columns in a DataFrame
+  df.count() | Returns the number of non-null values in each DataFrame column
+  df.max() | Returns the highest value in each column
+  df.min() | Returns the lowest value in each column
+  df.median() | Returns the median of each column   
+  df.std() | Returns the standard deviation of each column
+  ```
+  
+https://cppsecrets.com/users/5271114105115104979810446114107495548525364103109971051084699111109/Pandas-ModuleNotFoundError-No-Module-Named-Pandas-and-Functions-Explained.php
 
